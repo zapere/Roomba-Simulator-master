@@ -14,10 +14,20 @@ public class Challenge extends Head {
 	}
 
 	public void initialize() {
-
+		driveDirect(500,500);
 	}
 
 	public void loop() {
-
+		if(isBumpedLeft()){
+			
+		}
+		if(isBumpedRight()){
+			driveDirect(50,100);
+		}
+		if(isBumpedLeft()&&isBumpedRight()){
+			driveDirect(-100,-100);
+			sleep(700);
+			driveDirect(50,100);
+		}
 	}
 }

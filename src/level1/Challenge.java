@@ -30,9 +30,9 @@ public class Challenge extends Head {
 		// driveDirect(1000, 1000);
 		driveFoward(1);
 		turn90Degrees(1);
-		driveFoward(3f);
+		driveFoward(3.5f);
 		turn90Degrees(1);
-		driveFoward(1);
+	driveFoward(1.75f);
 	}
 
 	public void driveFoward(float distance) {
@@ -45,7 +45,7 @@ public class Challenge extends Head {
 
 	public void turn90Degrees(int amount) {
 		driveDirect(-100, 100);
-		int turns = 1900 * amount;
+		int turns = 1850 * amount;
 		sleep(turns);
 		driveDirect(0,0);
 	}
